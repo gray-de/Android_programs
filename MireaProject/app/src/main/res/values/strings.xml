@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mirea Project</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="Settings">Settings</string>
+    <string name="android_knowledge">Android Knowledge</string>
+    <string name="kurushkin_sergei">Kurushkin Sergei</string>
+    <string name="sk_08.mail_ru">sk_08.mail_ru</string>
+    <string name="settings_fragment">Settings Fragment</string>
+    <string name="Browser">Browser</string>
+
+</resources>

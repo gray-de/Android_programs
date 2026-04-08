@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/toolbar"
+            android:elevation="4dp"
+            android:background="@color/lavender"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="399dp"
+                android:layout_height="652dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Финансовая грамотность"
+                                android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                                android:textColor="?attr/colorOnSurface" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ключевые принципы управления деньгами"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="?attr/colorOnSurfaceVariant" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:text="Правило 50/30/20"
+                            android:textAppearance="?attr/textAppearanceTitleMedium"
+                            android:textColor="?attr/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="• 50% — необходимые расходы (жильё, еда, транспорт)"
+                            android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="• 30% — желания (развлечения, хобби, путешествия)"
+                            android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="• 20% — сбережения и инвестиции"
+                            android:textAppearance="?attr/textAppearanceBodyMedium" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:text="Как начать копить?"
+                            android:textAppearance="?attr/textAppearanceTitleMedium"
+                            android:textColor="?attr/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Открыть накопительный счёт с процентом"
+                            android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Автоматическое списание в первый день после зарплаты"
+                            android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Вести бюджет в приложении (например, MoneyLover, CoinKeeper)"
+                            android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Отказаться от ненужных подписок и кредитов"
+                            android:textAppearance="?attr/textAppearanceBodyMedium" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:text="Интересный факт"
+                                android:textAppearance="?attr/textAppearanceLabelLarge"
+                                android:textColor="?attr/colorOnPrimaryContainer" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Самой старой монете в мире более 2700 лет. Это лидийский статер из электрума (сплава золота и серебра), отчеканенный в VII веке до н. э."
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="?attr/colorOnPrimaryContainer" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nav_view"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/nav_menu"
+            app:itemIconTint="@color/lavender"
+            app:itemTextColor="@color/lavender"/>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="?attr/colorBackground"-->
+<!--android:fillViewport="true">-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp">-->
+
+<!--    &lt;!&ndash; Заголовок с иконкой &ndash;&gt;-->
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        app:cardElevation="2dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="20dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="48dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:src="@drawable/ic_money"   &lt;!&ndash; собственная иконка или стандартная &ndash;&gt;-->
+<!--            app:tint="?attr/colorPrimary" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Финансовая грамотность"-->
+<!--                    android:textAppearance="?attr/textAppearanceHeadlineSmall"-->
+<!--                    android:textColor="?attr/colorOnSurface" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Ключевые принципы управления деньгами"-->
+<!--                    android:textAppearance="?attr/textAppearanceBodyMedium"-->
+<!--                    android:textColor="?attr/colorOnSurfaceVariant" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+<!--    &lt;!&ndash; Карточка: правило 50/30/20 &ndash;&gt;-->
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        app:cardElevation="1dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="20dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="12dp"-->
+<!--                android:text="📊 Правило 50/30/20"-->
+<!--                android:textAppearance="?attr/textAppearanceTitleMedium"-->
+<!--                android:textColor="?attr/colorPrimary" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:text="• 50% — необходимые расходы (жильё, еда, транспорт)"-->
+<!--                android:textAppearance="?attr/textAppearanceBodyMedium" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:text="• 30% — желания (развлечения, хобби, путешествия)"-->
+<!--                android:textAppearance="?attr/textAppearanceBodyMedium" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="• 20% — сбережения и инвестиции"-->
+<!--                android:textAppearance="?attr/textAppearanceBodyMedium" />-->
+<!--        </LinearLayout>-->
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+<!--    &lt;!&ndash; Карточка: советы по экономии &ndash;&gt;-->
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        app:cardElevation="1dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="20dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="12dp"-->
+<!--                android:text="💰 Как начать копить?"-->
+<!--                android:textAppearance="?attr/textAppearanceTitleMedium"-->
+<!--                android:textColor="?attr/colorPrimary" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:text="✅ Открыть накопительный счёт с процентом"-->
+<!--                android:textAppearance="?attr/textAppearanceBodyMedium" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:text="✅ Автоматическое списание в первый день после зарплаты"-->
+<!--                android:textAppearance="?attr/textAppearanceBodyMedium" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:text="✅ Вести бюджет в приложении (например, MoneyLover, CoinKeeper)"-->
+<!--                android:textAppearance="?attr/textAppearanceBodyMedium" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="✅ Отказаться от ненужных подписок и кредитов"-->
+<!--                android:textAppearance="?attr/textAppearanceBodyMedium" />-->
+<!--        </LinearLayout>-->
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+<!--    &lt;!&ndash; Карточка: интересный факт &ndash;&gt;-->
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        app:cardElevation="1dp"-->
+<!--        app:cardBackgroundColor="?attr/colorPrimaryContainer">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="20dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="💡"-->
+<!--                android:textAppearance="?attr/textAppearanceDisplayMedium" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="5"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:text="Интересный факт"-->
+<!--                    android:textAppearance="?attr/textAppearanceLabelLarge"-->
+<!--                    android:textColor="?attr/colorOnPrimaryContainer" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Самой старой монете в мире более 2700 лет. Это лидийский статер из электрума (сплава золота и серебра), отчеканенный в VII веке до н. э."-->
+<!--                    android:textAppearance="?attr/textAppearanceBodyMedium"-->
+<!--                    android:textColor="?attr/colorOnPrimaryContainer" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+<!--    &lt;!&ndash; Кнопка с действием (например, открыть курс валют) &ndash;&gt;-->
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:text="Узнать курс валют"-->
+<!--        app:icon="@drawable/ic_currency_exchange"   &lt;!&ndash; иконка обмена валют &ndash;&gt;-->
+<!--    app:iconGravity="textStart"-->
+<!--    style="@style/Widget.Material3.Button.OutlinedButton" />-->
+
+<!--</LinearLayout>-->
+<!--</ScrollView>-->
